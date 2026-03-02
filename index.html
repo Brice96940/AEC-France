@@ -1,79 +1,87 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
 
-<title>AEC France – Orientation, CV, Méthodes & Parcours PRO</title>
+  <title>AEC France – Orientation, CV, Méthodes & Parcours PRO</title>
 
-<meta name="description" content="Plateforme AEC France : ressources gratuites, templates CV & mails, méthodes d’organisation, système PRO Notion et packs premium pour étudiants et jeunes diplômés." />
+  <meta name="description" content="Plateforme AEC France : ressources gratuites, templates CV & mails, méthodes d’organisation, système PRO Notion et packs premium pour étudiants et jeunes diplômés." />
 
-<meta name="robots" content="index, follow" />
-<link rel="canonical" href="https://brice96940.github.io/AEC-France/" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://brice96940.github.io/AEC-France/" />
 
-<!-- Open Graph -->
-<meta property="og:title" content="AEC France – Formation & Ressources" />
-<meta property="og:description" content="Templates CV, méthodes, base Notion PRO et packs premium pour structurer ton orientation et ta recherche." />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://brice96940.github.io/AEC-France/" />
-<meta property="og:image" content="https://brice96940.github.io/AEC-France/preview.jpg" />
+  <!-- Open Graph -->
+  <meta property="og:title" content="AEC France – Formation & Ressources" />
+  <meta property="og:description" content="Templates CV, méthodes, base Notion PRO et packs premium pour structurer ton orientation et ta recherche." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://brice96940.github.io/AEC-France/" />
+  <meta property="og:image" content="https://brice96940.github.io/AEC-France/preview.jpg" />
 
-<!-- Twitter Card -->
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AEC France – Ressources & Formation">
-<meta name="twitter:description" content="Méthodes + CV + système PRO pour étudiants & jeunes diplômés">
-<meta name="twitter:image" content="https://brice96940.github.io/AEC-France/preview.jpg">
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="AEC France – Ressources & Formation">
+  <meta name="twitter:description" content="Méthodes + CV + système PRO pour étudiants & jeunes diplômés">
+  <meta name="twitter:image" content="https://brice96940.github.io/AEC-France/preview.jpg">
 
-<!-- Favicon -->
-<link rel="icon" href="favicon.ico" type="image/x-icon">
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-<!-- GA4 -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-3CMKMB7J42"></script>
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-gtag('js', new Date());
-gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
-</script>
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-3CMKMB7J42"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
+  </script>
 
-<!-- Schema.org -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "EducationalOrganization",
- "name": "AEC France",
- "url": "https://brice96940.github.io/AEC-France/",
- "description": "Plateforme d'orientation, méthodes et ressources pour étudiants et jeunes diplômés.",
- "founder": {
-   "@type": "Person",
-   "name": "Brice Awoumpe"
- },
- "areaServed": "France"
-}
-</script>
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "EducationalOrganization",
+    "name": "AEC France",
+    "url": "https://brice96940.github.io/AEC-France/",
+    "description": "Plateforme d'orientation, méthodes et ressources pour étudiants et jeunes diplômés.",
+    "founder": {
+      "@type": "Person",
+      "name": "Brice Awoumpe"
+    },
+    "areaServed": "France"
+  }
+  </script>
 
   <style>
     :root{
-      /* Palette différente de ton Cameroun */
-      --bg:#071421;          /* bleu nuit pétrole */
-      --bg2:#081b2b;
-      --card: rgba(255,255,255,.06);
-      --card2: rgba(255,255,255,.035);
+      --bg0:#06111d;
+      --bg1:#071c2c;
+      --bg2:#091a28;
+
       --text:#eaf2ff;
       --muted:#b8c7e6;
+      --muted2: rgba(234,242,255,.72);
+
+      --card: rgba(255,255,255,.06);
+      --card2: rgba(255,255,255,.035);
       --line: rgba(255,255,255,.12);
 
-      --primary:#4f8cff;     /* bleu vif */
-      --primary2:#7c5cff;    /* violet */
-      --accent:#ffb020;      /* ambre (différent du vert Cameroun) */
-      --good:#32d583;        /* vert discret */
-      --shadow: 0 18px 50px rgba(0,0,0,.42);
-      --radius: 20px;
+      --primary:#4f8cff;
+      --primary2:#7c5cff;
+      --accent:#ffb020;
+      --good:#32d583;
+
+      --shadow: 0 16px 50px rgba(0,0,0,.42);
+      --shadow-soft: 0 10px 26px rgba(0,0,0,.30);
+      --radius: 22px;
 
       --max: 1120px;
+
+      --tap: 44px;
     }
 
     *{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
     body{
       margin:0;
       font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -82,77 +90,144 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
         radial-gradient(900px 320px at 18% 10%, rgba(79,140,255,.22), transparent 60%),
         radial-gradient(900px 320px at 85% 0%, rgba(124,92,255,.18), transparent 62%),
         radial-gradient(700px 260px at 70% 55%, rgba(255,176,32,.10), transparent 62%),
-        linear-gradient(180deg, var(--bg), var(--bg2));
+        linear-gradient(180deg, var(--bg0), var(--bg1) 55%, var(--bg2));
       line-height:1.5;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
     }
+
     a{ color:inherit; text-decoration:none; }
-    .wrap{ max-width:var(--max); margin:0 auto; padding:22px; }
+    .wrap{ max-width:var(--max); margin:0 auto; padding: 18px 18px 28px; }
+
+    /* Accessible skip link */
+    .skip{
+      position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;
+    }
+    .skip:focus{
+      left:12px; top:10px; width:auto; height:auto; padding:10px 12px;
+      background: rgba(255,255,255,.10);
+      border:1px solid rgba(255,255,255,.18);
+      border-radius: 12px;
+      z-index:999;
+    }
 
     /* Topbar */
     .topbar{
-      position: sticky; top:0; z-index:20;
-      backdrop-filter: blur(10px);
-      background: rgba(7,20,33,.68);
+      position: sticky; top:0; z-index:50;
+      backdrop-filter: blur(12px);
+      background: rgba(6,17,29,.66);
       border-bottom: 1px solid rgba(255,255,255,.08);
     }
     .topbar-inner{
       max-width:var(--max);
       margin:0 auto;
-      padding: 14px 22px;
+      padding: 12px 18px;
       display:flex; align-items:center; justify-content:space-between;
       gap:12px;
     }
     .brand{
       display:flex; gap:10px; align-items:center;
-      min-width: 220px;
+      min-width: 200px;
     }
     .logo{
       width:40px; height:40px; border-radius:14px;
       background: linear-gradient(135deg, var(--primary), var(--primary2));
       box-shadow: 0 0 0 5px rgba(79,140,255,.12);
+      flex:0 0 auto;
     }
     .brand b{ font-size: 15px; letter-spacing:.2px; }
     .brand .sub{ color:var(--muted); font-size:12px; margin-top:2px; }
 
-    nav{ display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; }
+    /* Desktop nav */
+    nav{ display:flex; gap:10px; flex-wrap:wrap; justify-content:flex-end; align-items:center; }
     .tab{
       padding:10px 12px;
       border-radius:999px;
       border:1px solid rgba(255,255,255,.10);
       background: rgba(255,255,255,.03);
       color: var(--muted);
-      font-weight:650;
+      font-weight:750;
       font-size: 13px;
-      transition: transform .08s ease, opacity .2s ease, border-color .2s ease;
+      transition: transform .08s ease, opacity .2s ease, border-color .2s ease, background .2s ease;
+      min-height: var(--tap);
+      display:inline-flex; align-items:center;
     }
     .tab:hover{ transform: translateY(-1px); opacity:.98; border-color: rgba(255,255,255,.18); }
-    .tab.active{ color: var(--text); border-color: rgba(255,176,32,.35); box-shadow: 0 0 0 4px rgba(255,176,32,.08); }
+    .tab.active{
+      color: var(--text);
+      border-color: rgba(255,176,32,.35);
+      box-shadow: 0 0 0 4px rgba(255,176,32,.08);
+      background: rgba(255,176,32,.08);
+    }
+
+    /* Mobile menu */
+    .menu-btn{
+      display:none;
+      height: var(--tap);
+      min-width: var(--tap);
+      border-radius: 14px;
+      border:1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.05);
+      color: var(--text);
+      cursor:pointer;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      font-weight:800;
+    }
+    .menu-panel{
+      display:none;
+      border-top: 1px solid rgba(255,255,255,.08);
+      background: rgba(6,17,29,.82);
+      padding: 10px 18px 14px;
+    }
+    .menu-panel.open{ display:block; }
+    .menu-grid{
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap:10px;
+      max-width: var(--max);
+      margin: 0 auto;
+    }
 
     /* Views routing */
     .view{ display:none; }
     .view.active{ display:block; }
 
-    /* Cards */
-    .card{
+    /* Surface / cards */
+    .surface{
       background: linear-gradient(180deg, var(--card), var(--card2));
       border:1px solid var(--line);
       border-radius: var(--radius);
       box-shadow: var(--shadow);
       padding: 22px;
     }
-    .grid-2{ display:grid; grid-template-columns: 1.25fr .75fr; gap:16px; }
+
+    .panel{
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: 18px;
+      padding: 16px;
+      box-shadow: var(--shadow-soft);
+    }
+    .panel.flat{ box-shadow:none; background: rgba(255,255,255,.025); }
+
+    .grid-2{ display:grid; grid-template-columns: 1.25fr .75fr; gap:16px; align-items:start; }
     .grid-3{ display:grid; grid-template-columns: repeat(3,1fr); gap:14px; }
     .grid-4{ display:grid; grid-template-columns: repeat(4,1fr); gap:12px; }
 
     h1{
       margin: 0 0 10px;
       font-size: clamp(28px, 3.3vw, 46px);
-      letter-spacing: -0.6px;
-      line-height: 1.08;
+      letter-spacing: -0.8px;
+      line-height: 1.07;
     }
     h2{ margin:0 0 10px; font-size: 18px; letter-spacing: -0.2px; }
     h3{ margin:0 0 8px; font-size: 16px; letter-spacing: -0.1px; }
+
     .muted{ color: var(--muted); }
+    .muted2{ color: var(--muted2); }
+
     .pill{
       display:inline-flex; align-items:center; gap:8px;
       padding: 7px 11px;
@@ -161,9 +236,42 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
       background: rgba(255,255,255,.03);
       color: var(--muted);
       font-size: 12px;
-      font-weight:650;
+      font-weight:750;
+      width: fit-content;
     }
     .row{ display:flex; gap:12px; flex-wrap:wrap; align-items:center; }
+
+    /* Hero */
+    .hero{
+      position: relative;
+      overflow:hidden;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:-80px -120px auto auto;
+      width: 360px;
+      height: 360px;
+      background: radial-gradient(circle at 30% 30%, rgba(255,176,32,.18), transparent 60%),
+                  radial-gradient(circle at 70% 70%, rgba(79,140,255,.22), transparent 60%);
+      filter: blur(2px);
+      pointer-events:none;
+      transform: rotate(12deg);
+    }
+    .hero-illus{
+      margin-top: 14px;
+      display:grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .kpi{
+      border-radius: 18px;
+      border:1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      padding: 14px;
+    }
+    .kpi b{ font-size: 18px; letter-spacing:-.2px; }
+    .kpi .muted{ font-size: 12px; margin-top: 6px; }
 
     /* Buttons */
     .btn{
@@ -171,23 +279,34 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
       gap:10px;
       padding: 12px 14px;
       border-radius: 14px;
-      font-weight:800;
+      font-weight:900;
       border:1px solid transparent;
       cursor:pointer;
-      transition: transform .08s ease, opacity .2s ease;
-      min-width: 220px;
+      transition: transform .08s ease, opacity .2s ease, background .2s ease, border-color .2s ease;
+      min-height: var(--tap);
+      user-select:none;
+      -webkit-tap-highlight-color: transparent;
     }
-    .btn:hover{ transform: translateY(-1px); opacity:.96; }
+    .btn:hover{ transform: translateY(-1px); opacity:.97; }
+    .btn:active{ transform: translateY(0); opacity:.95; }
+
     .btn.primary{ background: linear-gradient(135deg, var(--primary), var(--primary2)); }
     .btn.ghost{ background: rgba(255,255,255,.03); border-color: rgba(255,255,255,.14); }
     .btn.accent{ background: linear-gradient(135deg, var(--accent), rgba(255,176,32,.65)); color:#1b1200; }
     .btn.good{ background: rgba(50,213,131,.16); border-color: rgba(50,213,131,.35); }
 
+    .btn.block{ width:100%; }
+    .btn.disabled{
+      opacity:.55;
+      cursor:not-allowed;
+      transform:none !important;
+    }
+
     /* Pricing */
     .price{
       font-size: 34px;
-      font-weight: 900;
-      letter-spacing: -0.6px;
+      font-weight: 950;
+      letter-spacing: -0.8px;
       margin: 6px 0 6px;
     }
     .badge{
@@ -195,16 +314,19 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
       padding: 6px 10px;
       border-radius: 999px;
       font-size: 12px;
-      font-weight: 900;
+      font-weight: 950;
       border:1px solid rgba(255,255,255,.14);
       background: rgba(255,255,255,.03);
       color: var(--muted);
+      width: fit-content;
     }
     .badge.best{
       border-color: rgba(255,176,32,.38);
       box-shadow: 0 0 0 4px rgba(255,176,32,.08);
       color: var(--text);
+      background: rgba(255,176,32,.08);
     }
+
     ul{ margin: 10px 0 0; padding-left: 18px; color: var(--muted); }
     li{ margin: 6px 0; }
 
@@ -215,12 +337,26 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
       border-radius: 16px;
       padding: 12px 14px;
     }
-    summary{ cursor:pointer; font-weight:800; }
+    summary{ cursor:pointer; font-weight:900; }
     details p{ margin: 10px 0 0; color: var(--muted); }
+
+    /* Divider */
+    .hr{
+      border:0;
+      border-top:1px solid rgba(255,255,255,.10);
+      margin: 14px 0;
+    }
+
+    /* Focus states (keyboard) */
+    :focus-visible{
+      outline: 3px solid rgba(79,140,255,.55);
+      outline-offset: 2px;
+      border-radius: 14px;
+    }
 
     /* Footer */
     footer{
-      margin: 20px 0 6px;
+      margin: 18px 0 6px;
       color: rgba(234,242,255,.70);
       font-size: 12px;
       display:flex; justify-content:space-between; gap:10px; flex-wrap:wrap;
@@ -232,20 +368,29 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
       .grid-2{ grid-template-columns: 1fr; }
       .grid-3{ grid-template-columns: 1fr; }
       .grid-4{ grid-template-columns: 1fr 1fr; }
-      .btn{ min-width: 100%; }
-      nav{ justify-content:flex-start; }
-      .brand{ min-width: auto; }
+      .brand{ min-width:auto; }
+      nav{ display:none; }             /* hide desktop nav */
+      .menu-btn{ display:inline-flex; } /* show mobile button */
     }
     @media (max-width: 520px){
       .grid-4{ grid-template-columns: 1fr; }
+      .hero-illus{ grid-template-columns: 1fr; }
+      .surface{ padding: 18px; }
+    }
+
+    @media (prefers-reduced-motion: reduce){
+      html{ scroll-behavior:auto; }
+      .btn, .tab{ transition:none; }
     }
   </style>
 </head>
 
 <body>
+  <a class="skip" href="#main">Aller au contenu</a>
+
   <header class="topbar">
     <div class="topbar-inner">
-      <a class="brand" href="#/accueil" data-nav="accueil" data-track="nav_accueil_brand">
+      <a class="brand" href="#/accueil" data-nav="accueil" data-track="nav_accueil_brand" aria-label="AEC France - Accueil">
         <span class="logo" aria-hidden="true"></span>
         <div>
           <b>AEC</b>
@@ -253,7 +398,8 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
         </div>
       </a>
 
-      <nav>
+      <!-- Desktop nav -->
+      <nav aria-label="Navigation principale">
         <a class="tab" href="#/accueil" data-nav="accueil" data-track="nav_accueil">Accueil</a>
         <a class="tab" href="#/ressources" data-nav="ressources" data-track="nav_ressources">Ressources</a>
         <a class="tab" href="#/boutique" data-nav="boutique" data-track="nav_boutique">Boutique</a>
@@ -261,112 +407,138 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
         <a class="tab" href="#/proposer" data-nav="proposer" data-track="nav_proposer">Proposer</a>
         <a class="tab" href="#/contact" data-nav="contact" data-track="nav_contact">Contact</a>
       </nav>
+
+      <!-- Mobile menu button -->
+      <button class="menu-btn" id="menuBtn" aria-expanded="false" aria-controls="menuPanel" data-track="nav_mobile_menu">
+        ☰ Menu
+      </button>
+    </div>
+
+    <!-- Mobile menu panel -->
+    <div class="menu-panel" id="menuPanel" role="region" aria-label="Menu mobile">
+      <div class="menu-grid">
+        <a class="tab" href="#/accueil" data-nav="accueil" data-track="mnav_accueil">Accueil</a>
+        <a class="tab" href="#/ressources" data-nav="ressources" data-track="mnav_ressources">Ressources</a>
+        <a class="tab" href="#/boutique" data-nav="boutique" data-track="mnav_boutique">Boutique</a>
+        <a class="tab" href="#/premium" data-nav="premium" data-track="mnav_premium">Premium</a>
+        <a class="tab" href="#/proposer" data-nav="proposer" data-track="mnav_proposer">Proposer</a>
+        <a class="tab" href="#/contact" data-nav="contact" data-track="mnav_contact">Contact</a>
+      </div>
     </div>
   </header>
 
-  <div class="wrap">
+  <main id="main" class="wrap">
 
     <!-- =========================
          VIEW : ACCUEIL
     ========================== -->
     <section class="view active" id="view-accueil">
       <div class="grid-2">
-        <section class="card">
-          <span class="pill">🇫🇷 France · Formation · Gratuit + Premium</span>
-          <h1>Accéder aux bonnes ressources, même sans réseau.</h1>
+        <section class="surface hero">
+          <span class="pill">🇫🇷 France · Gratuit + Premium</span>
+          <h1>Accède aux bonnes ressources, même sans réseau.</h1>
           <p class="muted" style="font-size:16px; margin:0 0 14px;">
             Une plateforme simple : <b>parcours guidés (0→1)</b>, ressources fiables, templates et méthodes.
-            Objectif : <b>te faire avancer sans te disperser</b>.
+            Objectif : <b>avancer sans te disperser</b>.
           </p>
 
           <div class="row" style="margin-top:10px;">
-            <a class="btn primary" href="#/ressources" data-track="cta_home_ressources">📚 Base Ressources (Gratuit)</a>
-            <a class="btn accent" href="#/boutique" data-track="cta_home_boutique">🛒 Voir la Boutique (Gumroad)</a>
-            <a class="btn ghost" href="#/premium" data-track="cta_home_premium">⭐ Rejoindre Premium</a>
+            <a class="btn primary" href="#/ressources" data-track="cta_home_ressources">📚 Ressources (gratuit)</a>
+            <a class="btn accent" href="#/boutique" data-track="cta_home_boutique">🛒 Boutique (Gumroad)</a>
+            <a class="btn ghost" href="#/premium" data-track="cta_home_premium">⭐ Accès Premium</a>
           </div>
 
           <div class="row" style="margin-top:12px;">
             <span class="pill">✓ Modèles CV / mails</span>
             <span class="pill">✓ Démarches France</span>
             <span class="pill">✓ Méthode 0→1</span>
-            <span class="pill">✓ Tracking GA4</span>
+            <span class="pill">✓ Suivi & organisation</span>
+          </div>
+
+          <div class="hero-illus">
+            <div class="kpi">
+              <b>0 → 1</b>
+              <div class="muted">Un ordre d’exécution clair pour passer à l’action.</div>
+            </div>
+            <div class="kpi">
+              <b>Templates prêts</b>
+              <div class="muted">CV, mails, relances : copier-coller + adapter.</div>
+            </div>
           </div>
 
           <div class="grid-3" style="margin-top:16px;">
-            <div class="card" style="box-shadow:none;">
+            <div class="panel flat">
               <h3>Accès public</h3>
-              <p class="muted">Base gratuite + ajout continu. Idéal pour commencer maintenant.</p>
+              <p class="muted">Base gratuite + améliorations continues. Idéal pour démarrer maintenant.</p>
             </div>
-            <div class="card" style="box-shadow:none;">
+            <div class="panel flat">
               <h3>Parcours guidés</h3>
-              <p class="muted">Tu sais quoi faire, dans quel ordre (0→1). Moins de chaos.</p>
+              <p class="muted">Tu sais quoi faire et dans quel ordre. Moins de chaos.</p>
             </div>
-            <div class="card" style="box-shadow:none;">
+            <div class="panel flat">
               <h3>Premium</h3>
               <p class="muted">Templates + trackers + système complet (Notion PRO).</p>
             </div>
           </div>
         </section>
 
-        <aside class="card">
+        <aside class="surface">
           <h2>Accès rapide</h2>
-          <p class="muted" style="margin-top:-2px;">Boutons + tracking GA4 (prêt)</p>
+          <p class="muted" style="margin-top:-2px;">Actions principales (tracking GA4 actif)</p>
 
           <div class="row" style="margin-top:10px;">
-            <a class="btn ghost" href="#/ressources" data-track="quick_ressources">📌 Ressources</a>
-            <a class="btn ghost" href="#/boutique" data-track="quick_boutique">🧾 Boutique</a>
-            <a class="btn ghost" href="#/premium" data-track="quick_premium">✅ Rejoindre</a>
+            <a class="btn ghost block" href="#/ressources" data-track="quick_ressources">📌 Ressources</a>
+            <a class="btn ghost block" href="#/boutique" data-track="quick_boutique">🧾 Boutique</a>
+            <a class="btn ghost block" href="#/premium" data-track="quick_premium">✅ Rejoindre</a>
           </div>
 
-          <hr style="border:0;border-top:1px solid rgba(255,255,255,.10); margin:14px 0;" />
+          <hr class="hr" />
 
           <h2>Pour qui ?</h2>
           <p class="muted" style="margin:0;">• Étudiants & jeunes diplômés</p>
           <p class="muted" style="margin:0;">• Nouveaux arrivants en France</p>
           <p class="muted" style="margin:0;">• Profils sans réseau / sans modèle</p>
 
-          <hr style="border:0;border-top:1px solid rgba(255,255,255,.10); margin:14px 0;" />
+          <hr class="hr" />
 
-          <h2>Start here (5 min)</h2>
+          <h2>Start (5 min)</h2>
           <ol style="margin:8px 0 0; padding-left:18px; color: var(--muted);">
-            <li>Ouvre la base gratuite (Ressources)</li>
+            <li>Ouvre la base gratuite</li>
             <li>Choisis 1 parcours (0→1)</li>
-            <li>Si tu veux gagner du temps : Starter (9€)</li>
+            <li>Si tu veux gagner du temps : Pack Starter</li>
           </ol>
         </aside>
       </div>
 
-      <!-- Preuves / Promesse -->
       <div class="grid-3" style="margin-top:16px;">
-        <div class="card" style="box-shadow:none;">
+        <div class="surface" style="box-shadow:none;">
           <h2>Ce que tu obtiens</h2>
-          <p class="muted">Des ressources triées + une méthode + des templates prêts.</p>
+          <p class="muted">Ressources triées + méthode + templates prêts.</p>
         </div>
-        <div class="card" style="box-shadow:none;">
+        <div class="surface" style="box-shadow:none;">
           <h2>Ce que tu évites</h2>
-          <p class="muted">Le “je fais tout / n’importe quoi” → dispersion et perte de temps.</p>
+          <p class="muted">La dispersion : “je fais tout / n’importe quoi”.</p>
         </div>
-        <div class="card" style="box-shadow:none;">
+        <div class="surface" style="box-shadow:none;">
           <h2>Résultat attendu</h2>
           <p class="muted">Un plan clair + des actions répétables chaque semaine.</p>
         </div>
       </div>
 
-      <!-- Témoignages (placeholders) -->
-      <div class="card" style="margin-top:16px;">
+      <div class="surface" style="margin-top:16px;">
         <h2>Témoignages (bêta)</h2>
         <div class="grid-3" style="margin-top:10px;">
-          <div class="card" style="box-shadow:none;">
+          <div class="panel flat">
             <h3>“Je ne savais pas par où commencer.”</h3>
             <p class="muted">→ Le parcours m’a donné un ordre d’exécution.</p>
             <div class="muted" style="font-size:12px; margin-top:8px;">— Étudiant (bêta)</div>
           </div>
-          <div class="card" style="box-shadow:none;">
+          <div class="panel flat">
             <h3>“Mes mails étaient trop longs.”</h3>
-            <p class="muted">→ Les templates m’ont fait gagner du temps.</p>
+            <p class="muted">→ Les modèles m’ont fait gagner du temps.</p>
             <div class="muted" style="font-size:12px; margin-top:8px;">— Jeune diplômé (bêta)</div>
           </div>
-          <div class="card" style="box-shadow:none;">
+          <div class="panel flat">
             <h3>“J’avais des infos, mais pas de système.”</h3>
             <p class="muted">→ La base PRO structure mon suivi et mes relances.</p>
             <div class="muted" style="font-size:12px; margin-top:8px;">— Profil international (bêta)</div>
@@ -374,21 +546,20 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
         </div>
       </div>
 
-      <!-- FAQ -->
-      <div class="card" style="margin-top:16px;">
+      <div class="surface" style="margin-top:16px;">
         <h2>FAQ</h2>
         <div class="grid-3" style="margin-top:10px;">
           <details>
-            <summary>Gratuit vs Premium : c’est quoi la différence ?</summary>
-            <p>Le gratuit = base utile pour démarrer. Le premium = templates + trackers + système complet + gains de temps (Notion PRO).</p>
+            <summary>Gratuit vs Premium : quelle différence ?</summary>
+            <p>Le gratuit = base utile pour démarrer. Le premium = templates + trackers + système complet (Notion PRO) pour gagner du temps.</p>
           </details>
           <details>
-            <summary>Est-ce que tu garantis un job / une alternance ?</summary>
-            <p>Non. Ce sont des ressources pédagogiques et organisationnelles. Tes résultats dépendent de ton contexte et de ton travail.</p>
+            <summary>Est-ce que tu garantis un emploi ?</summary>
+            <p>Non. Ce sont des ressources pédagogiques et organisationnelles. Tes résultats dépendent de ton contexte et de ton exécution.</p>
           </details>
           <details>
-            <summary>Le payant est-il accessible sur GitHub ?</summary>
-            <p>Non. GitHub reste public et ne contient pas les contenus premium. L’accès premium passe par Gumroad + validation (formulaire).</p>
+            <summary>Le payant est-il sur GitHub ?</summary>
+            <p>Non. GitHub reste public. L’accès premium passe par Gumroad + formulaire d’accès (validation).</p>
           </details>
         </div>
       </div>
@@ -398,29 +569,29 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
          VIEW : RESSOURCES (GRATUIT)
     ========================== -->
     <section class="view" id="view-ressources">
-      <div class="card">
-        <h1 style="font-size:34px; margin-bottom:8px;">Ressources (Gratuit)</h1>
+      <div class="surface">
+        <h1 style="font-size:34px; margin-bottom:8px;">Ressources (gratuit)</h1>
         <p class="muted" style="margin-top:0;">
-          Ici : ressources publiques pour démarrer vite. Tu proposes une ressource via un formulaire.
+          Ressources publiques pour démarrer vite. Tu peux proposer une ressource via un formulaire.
         </p>
 
         <div class="grid-3" style="margin-top:14px;">
-          <div class="card" style="box-shadow:none;">
+          <div class="panel">
             <h2>Base Notion (France)</h2>
             <p class="muted">CV, mails, démarches, opportunités, méthodes.</p>
-            <a class="btn primary" href="#" id="openNotionFree" data-track="open_notion_free">Ouvrir Notion gratuit</a>
+            <a class="btn primary block" href="#" id="openNotionFree" data-track="open_notion_free">Ouvrir Notion gratuit</a>
           </div>
 
-          <div class="card" style="box-shadow:none;">
+          <div class="panel">
             <h2>Parcours (0→1)</h2>
-            <p class="muted">Choisis un chemin simple, exécutable.</p>
-            <a class="btn ghost" href="#/premium" data-track="go_parcours">Voir les parcours</a>
+            <p class="muted">Choisis un chemin simple et exécutable.</p>
+            <a class="btn ghost block" href="#/premium" data-track="go_parcours">Voir les parcours</a>
           </div>
 
-          <div class="card" style="box-shadow:none;">
+          <div class="panel">
             <h2>Proposer / Demander</h2>
-            <p class="muted">Tu envoies une ressource, on l’ajoute si pertinente.</p>
-            <a class="btn good" href="#" id="openProposer" data-track="open_proposer_form">Proposer une ressource</a>
+            <p class="muted">Tu envoies une ressource, on l’ajoute si elle est pertinente.</p>
+            <a class="btn good block" href="#" id="openProposer" data-track="open_proposer_form">Proposer une ressource</a>
           </div>
         </div>
       </div>
@@ -430,7 +601,7 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
          VIEW : BOUTIQUE (GUMROAD)
     ========================== -->
     <section class="view" id="view-boutique">
-      <div class="card">
+      <div class="surface">
         <div class="row" style="justify-content:space-between;">
           <div>
             <h1 style="font-size:34px; margin-bottom:6px;">Boutique (Gumroad)</h1>
@@ -441,14 +612,13 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
           <span class="badge">Paiement sécurisé via Gumroad</span>
         </div>
 
-        <!-- Bundle / best value -->
-        <div class="card" style="margin-top:14px; border-color: rgba(255,176,32,.28);">
+        <div class="panel" style="margin-top:14px; border-color: rgba(255,176,32,.28);">
           <div class="row" style="justify-content:space-between; align-items:flex-start;">
-            <div>
+            <div style="max-width: 680px;">
               <span class="badge best">Best value</span>
               <h2 style="margin-top:10px;">Pack Pro+ (79€)</h2>
               <p class="muted" style="margin:0;">
-                “Tu gagnes 10h de travail en 1 week-end” : Base PRO + tous packs + scripts entretien + KPI + démarches.
+                Base PRO + packs + scripts entretien + KPI + démarches : un système complet.
               </p>
             </div>
             <div style="text-align:right;">
@@ -459,60 +629,53 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
         </div>
 
         <div class="grid-3" style="margin-top:14px;">
-          <!-- Starter -->
-          <div class="card" style="box-shadow:none;">
+          <div class="panel">
             <span class="badge">Starter</span>
             <h2>Pack Starter</h2>
             <div class="price">9€</div>
-            <p class="muted">“En 45 min tu as un CV + mails + plan d’action”</p>
+            <p class="muted">CV + mails + plan d’action : démarrage rapide.</p>
             <ul>
-              <li>4 modèles CV (Notion + PDF)</li>
-              <li>12 modèles mails (spontanée, relance, etc.)</li>
-              <li>Checklist candidature (10 étapes)</li>
-              <li>Matrice décisionnelle + plan</li>
+              <li>Modèles CV (Notion + PDF)</li>
+              <li>Modèles mails (spontanée, relance, etc.)</li>
+              <li>Checklist candidature</li>
+              <li>Plan d’exécution</li>
             </ul>
             <div class="row" style="margin-top:12px;">
-              <a class="btn primary" href="#" id="buyStarter" data-track="buy_starter">Acheter Starter</a>
-              <a class="btn ghost" href="#/premium" data-track="see_access_flow">Voir accès</a>
+              <a class="btn primary block" href="#" id="buyStarter" data-track="buy_starter">Acheter Starter</a>
+              <a class="btn ghost block" href="#/premium" data-track="see_access_flow">Voir l’accès</a>
             </div>
           </div>
 
-          <!-- Base PRO -->
-          <div class="card" style="box-shadow:none;">
+          <div class="panel">
             <span class="badge">Système</span>
             <h2>Accès Base PRO</h2>
-            <div class="price">29€<span style="font-size:14px; font-weight:900; color:var(--muted);">/mois</span></div>
-            <p class="muted">“Ton système complet : orientation + candidatures + marché + outils”</p>
+            <div class="price">29€ <span style="font-size:14px; font-weight:900; color:var(--muted);">/mois</span></div>
+            <p class="muted">Orientation + candidatures + marché + suivi.</p>
             <ul>
-              <li>Notion PRO complet (templates + trackers)</li>
+              <li>Notion PRO (templates + trackers)</li>
               <li>Updates mensuelles</li>
               <li>Méthode “opportunités” + filtrage</li>
-              <li>Accès “démarches France” (méthodes)</li>
+              <li>Accès “démarches France”</li>
             </ul>
             <div class="row" style="margin-top:12px;">
-              <a class="btn primary" href="#" id="buyProMonthly" data-track="buy_pro_monthly">S’abonner</a>
-              <a class="btn ghost" href="#" id="buyProOneShot" data-track="buy_pro_oneshot">49€ one-shot</a>
+              <a class="btn primary block" href="#" id="buyProMonthly" data-track="buy_pro_monthly">S’abonner</a>
+              <a class="btn ghost block" href="#" id="buyProOneShot" data-track="buy_pro_oneshot">49€ (achat unique)</a>
             </div>
           </div>
 
-          <!-- Tes 4 produits existants -->
-          <div class="card" style="box-shadow:none;">
+          <div class="panel">
             <span class="badge">Déjà dispo</span>
             <h2>Produits existants</h2>
-            <!-- <p class="muted">Tu as déjà 4 produits Gumroad : on les met aussi en accès direct.</p> -->
             <div class="row" style="margin-top:10px;">
-              <a class="btn ghost" href="#" id="prod1" data-track="prod_existing_1">Produit 1</a>
-              <a class="btn ghost" href="#" id="prod2" data-track="prod_existing_2">Produit 2</a>
-              <a class="btn ghost" href="#" id="prod3" data-track="prod_existing_3">Produit 3</a>
-              <a class="btn ghost" href="#" id="prod4" data-track="prod_existing_4">Produit 4</a>
+              <a class="btn ghost block" href="#" id="prod1" data-track="prod_existing_1">Produit 1</a>
+              <a class="btn ghost block" href="#" id="prod2" data-track="prod_existing_2">Produit 2</a>
+              <a class="btn ghost block" href="#" id="prod3" data-track="prod_existing_3">Produit 3</a>
+              <a class="btn ghost block" href="#" id="prod4" data-track="prod_existing_4">Produit 4</a>
             </div>
-            <p class="muted" style="font-size:12px; margin-top:10px;">
-            <!--(Remplace les liens dans le bloc AEC_LINKS en bas.) -->
-            </p>
           </div>
         </div>
 
-        <div class="card" style="margin-top:14px; box-shadow:none;">
+        <div class="panel flat" style="margin-top:14px;">
           <h2>Disclaimer (important)</h2>
           <p class="muted" style="margin:0;">
             Ressources pédagogiques et organisationnelles. Aucun résultat n’est garanti : ton avancée dépend de ton contexte et de ton travail.
@@ -526,45 +689,44 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
          VIEW : PREMIUM (ACCÈS / PROCESS)
     ========================== -->
     <section class="view" id="view-premium">
-      <div class="card">
-        <h1 style="font-size:34px; margin-bottom:8px;">Premium — Accès & Process</h1>
+      <div class="surface">
+        <h1 style="font-size:34px; margin-bottom:8px;">Premium — accès & process</h1>
         <p class="muted" style="margin-top:0;">
           Le payant n’est pas sur GitHub public. Le process passe par Gumroad + formulaire d’accès.
         </p>
 
         <div class="grid-3" style="margin-top:14px;">
-          <div class="card" style="box-shadow:none;">
+          <div class="panel">
             <h2>1) Acheter sur Gumroad</h2>
-            <p class="muted">Tu choisis Starter / Base PRO / Pro+.</p>
-            <a class="btn primary" href="#/boutique" data-track="premium_go_boutique">Aller à la boutique</a>
+            <p class="muted">Choisis Starter / Base PRO / Pro+.</p>
+            <a class="btn primary block" href="#/boutique" data-track="premium_go_boutique">Aller à la boutique</a>
           </div>
 
-          <div class="card" style="box-shadow:none;">
+          <div class="panel">
             <h2>2) Form “Accès PRO”</h2>
             <p class="muted">Après achat, tu remplis le formulaire (email).</p>
-            <a class="btn good" href="#" id="openAccessProForm" data-track="open_access_pro_form">Ouvrir le Form</a>
+            <a class="btn good block" href="#" id="openAccessProForm" data-track="open_access_pro_form">Ouvrir le Form</a>
           </div>
 
-          <div class="card" style="box-shadow:none;">
+          <div class="panel">
             <h2>3) Activation</h2>
-            <p class="muted">Je t’ajoute en invité sur Notion PRO / j’envoie le PDF si besoin.</p>
-            <a class="btn ghost" href="#/contact" data-track="premium_contact">Me contacter</a>
+            <p class="muted">Ajout en invité sur Notion PRO / envoi PDF si besoin.</p>
+            <a class="btn ghost block" href="#/contact" data-track="premium_contact">Me contacter</a>
           </div>
         </div>
 
-        <!-- Comparatif -->
-        <div class="card" style="margin-top:14px; box-shadow:none;">
+        <div class="panel flat" style="margin-top:14px;">
           <h2>Gratuit vs Premium</h2>
           <div class="grid-3" style="margin-top:10px;">
-            <div class="card" style="box-shadow:none;">
+            <div class="panel flat">
               <h3>Gratuit</h3>
               <ul>
                 <li>Base de ressources</li>
                 <li>Méthode de base</li>
-                <li>Proposer des ajouts</li>
+                <li>Proposition d’ajouts</li>
               </ul>
             </div>
-            <div class="card" style="box-shadow:none;">
+            <div class="panel flat">
               <h3>Starter (9€)</h3>
               <ul>
                 <li>CV + mails prêts</li>
@@ -572,7 +734,7 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
                 <li>Exécution rapide</li>
               </ul>
             </div>
-            <div class="card" style="box-shadow:none;">
+            <div class="panel flat">
               <h3>PRO / Pro+</h3>
               <ul>
                 <li>Système complet + trackers</li>
@@ -583,13 +745,10 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
           </div>
         </div>
 
-        <!-- Liens “3 produits premium à créer” -->
-        <div class="card" style="margin-top:14px; box-shadow:none;">
-          <h2>Liens produits Premium (à coller)</h2>
+        <div class="panel flat" style="margin-top:14px;">
+          <h2>Liens produits Premium</h2>
           <p class="muted" style="margin-top:0;">
-          
-            <!-- Tu m’as demandé d’ajouter les liens vers les 3 produits qu’on va créer : ils sont déjà câblés : -->
-            <b>Starter / Base PRO / Pro+</b> 
+          Liens directs (Starter / Base PRO / Pro+).  <!-- Si un lien est placeholder, il restera inactif.-->
           </p>
           <div class="row">
             <a class="btn ghost" href="#" id="goStarterLink" data-track="premium_link_starter">Lien Starter</a>
@@ -604,10 +763,10 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
          VIEW : PROPOSER
     ========================== -->
     <section class="view" id="view-proposer">
-      <div class="card">
+      <div class="surface">
         <h1 style="font-size:34px; margin-bottom:8px;">Proposer une ressource</h1>
         <p class="muted" style="margin-top:0;">
-          Tu centralises les propositions via un seul lien (Google Form / Notion dédié).
+          Centralise les propositions via un formulaire (Google Form / Notion dédié).
         </p>
         <div class="row" style="margin-top:12px;">
           <a class="btn good" href="#" id="openProposer2" data-track="proposer_open_form">Ouvrir le formulaire</a>
@@ -620,35 +779,34 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
          VIEW : CONTACT
     ========================== -->
     <section class="view" id="view-contact">
-      <div class="card">
+      <div class="surface">
         <h1 style="font-size:34px; margin-bottom:8px;">Contact</h1>
         <p class="muted" style="margin-top:0;">
-          Contact direct. (Aucun engagement de résultat, on avance avec une méthode.)
+          Contact direct. (Aucun engagement de résultat : on avance avec une méthode.)
         </p>
 
         <div class="grid-3" style="margin-top:14px;">
-          <div class="card" style="box-shadow:none;">
+          <div class="panel">
             <h2>Email</h2>
-            <a class="btn ghost" href="#" id="emailLink" data-track="contact_email">Envoyer un email</a>
+            <a class="btn ghost block" href="#" id="emailLink" data-track="contact_email">Envoyer un email</a>
           </div>
-          <div class="card" style="box-shadow:none;">
+          <div class="panel">
             <h2>LinkedIn</h2>
-            <a class="btn ghost" href="#" id="linkedinLink" data-track="contact_linkedin">Ouvrir LinkedIn</a>
+            <a class="btn ghost block" href="#" id="linkedinLink" data-track="contact_linkedin">Ouvrir LinkedIn</a>
           </div>
-          <div class="card" style="box-shadow:none;">
+          <div class="panel">
             <h2>Mentions / confidentialité</h2>
-            <a class="btn ghost" href="#" id="legalLink" data-track="contact_legal">Voir les infos</a>
+            <a class="btn ghost block" href="#" id="legalLink" data-track="contact_legal">Voir les infos</a>
           </div>
         </div>
 
-        <div class="card" style="margin-top:14px; box-shadow:none;">
+        <div class="panel flat" style="margin-top:14px;">
           <h2>Infos légales (MVP)</h2>
           <p class="muted" style="margin:0;">
-            • Ressources pédagogiques et organisationnelles. <br/>
-            • Aucun résultat n’est garanti. <br/>
-            • Vérifie toujours les démarches sur les sources officielles. <br/>
-            • Analytics : mesure d’audience (GA4). 
-          <!--Tu peux ajouter une bannière cookies plus tard si tu passes en production “grand public”.-->
+            • Ressources pédagogiques et organisationnelles.<br/>
+            • Aucun résultat n’est garanti.<br/>
+            • Vérifie toujours les démarches sur les sources officielles.<br/>
+            • Analytics : mesure d’audience (GA4).
           </p>
         </div>
       </div>
@@ -664,7 +822,7 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
         <a class="smalllink" href="#/ressources" data-track="footer_ressources">Ressources</a>
       </div>
     </footer>
-  </div>
+  </main>
 
   <script>
     // =========================
@@ -672,7 +830,7 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
     // =========================
     const AEC_LINKS = {
       email: "differentsleaders328@gmail.com",
-      linkedin: "https://www.linkedin.com/in/awoumpebrice99/recent-activity/all/",
+      linkedin: "https://www.linkedin.com/in/awoumpebrice99/",
 
       // Notion gratuit (France)
       notion_free: "https://www.notion.so/AEC-France-311e2b4c167380a688dcd03a5b0fddf7?source=copy_link",
@@ -683,13 +841,13 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
       // ✅ Form Accès PRO (après achat)
       access_pro_form: "https://docs.google.com/forms/d/e/1FAIpQLSfdxGvy2BZaaL7MYKDlnTSXikcxrrhunNo6bGf2gt5-khosWQ/viewform?usp=header",
 
-      // ✅ 3 produits à créer (Gumroad) — colle les liens dès qu’ils existent
+      // ✅ Produits Gumroad
       gumroad_starter_9: "https://bricearnol.gumroad.com/l/jnjppn",
       gumroad_pro_monthly_29: "https://ton-gumroad-link-pro-monthly",
       gumroad_pro_oneshot_49: "https://bricearnol.gumroad.com/l/plokyo",
       gumroad_proplus_79: "https://bricearnol.gumroad.com/l/puxjqo",
 
-      // Tes 4 produits déjà existants (colle tes vrais liens)
+      // Produits existants
       existing_1: "https://bricearnol.gumroad.com/l/lwopa",
       existing_2: "https://bricearnol.gumroad.com/l/lwopa",
       existing_3: "https://bricearnol.gumroad.com/l/uindap",
@@ -716,6 +874,36 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
     });
 
     // =========================
+    // MOBILE MENU
+    // =========================
+    const menuBtn = document.getElementById("menuBtn");
+    const menuPanel = document.getElementById("menuPanel");
+
+    function setMenu(open){
+      if(!menuBtn || !menuPanel) return;
+      menuPanel.classList.toggle("open", open);
+      menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+
+    if(menuBtn){
+      menuBtn.addEventListener("click", ()=>{
+        const isOpen = menuPanel.classList.contains("open");
+        setMenu(!isOpen);
+      });
+    }
+
+    // Close menu on navigation click
+    if(menuPanel){
+      menuPanel.addEventListener("click", (e)=>{
+        const link = e.target.closest("a");
+        if(link) setMenu(false);
+      });
+    }
+
+    // Close menu on hash change (mobile)
+    window.addEventListener("hashchange", ()=> setMenu(false));
+
+    // =========================
     // SIMPLE ROUTER (#/accueil etc.)
     // =========================
     const VIEWS = ["accueil","ressources","boutique","premium","proposer","contact"];
@@ -725,9 +913,12 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
         const el = document.getElementById("view-"+v);
         if(el) el.classList.toggle("active", v===name);
       });
+
+      // active tabs (both desktop + mobile)
       document.querySelectorAll("[data-nav]").forEach(a=>{
         a.classList.toggle("active", a.getAttribute("data-nav")===name);
       });
+
       window.scrollTo({ top:0, behavior:"instant" });
     }
 
@@ -740,14 +931,19 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
     window.addEventListener("hashchange", ()=> setActiveView(parseHash()));
 
     // =========================
-    // SAFE LINK helper
+    // SAFE LINK helper + disabled style if placeholder
     // =========================
     function safeLink(el, url, fallbackHash="#/accueil", newTab=true){
       if(!el) return;
+
+      const isPlaceholder = (!url || url.includes("TON_FORM") || url.includes("ton-gumroad"));
+      if(isPlaceholder){
+        el.classList.add("disabled");
+        el.setAttribute("aria-disabled", "true");
+      }
+
       el.addEventListener("click", (e)=>{
-        // if url missing, stay inside app
-        if(!url || url.includes("TON_FORM") || url.includes("ton-gumroad") ){
-          // keep navigation for placeholders
+        if(isPlaceholder){
           if(fallbackHash) location.hash = fallbackHash;
           return;
         }
@@ -760,9 +956,6 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
       });
     }
 
-    // =========================
-    // Bind links
-    // =========================
     function mailto(email){
       return "mailto:" + encodeURIComponent(email);
     }
@@ -778,13 +971,13 @@ gtag('config', 'G-3CMKMB7J42', { anonymize_ip: true });
     safeLink(document.getElementById("openProposer"), AEC_LINKS.proposer_form, "#/proposer", true);
     safeLink(document.getElementById("openProposer2"), AEC_LINKS.proposer_form, "#/proposer", true);
 
-    // Boutique (3 produits à créer)
+    // Boutique
     safeLink(document.getElementById("buyStarter"), AEC_LINKS.gumroad_starter_9, "#/boutique", true);
     safeLink(document.getElementById("buyProMonthly"), AEC_LINKS.gumroad_pro_monthly_29, "#/boutique", true);
     safeLink(document.getElementById("buyProOneShot"), AEC_LINKS.gumroad_pro_oneshot_49, "#/boutique", true);
     safeLink(document.getElementById("buyProPlus"), AEC_LINKS.gumroad_proplus_79, "#/boutique", true);
 
-    // Premium direct links (same)
+    // Premium direct links
     safeLink(document.getElementById("goStarterLink"), AEC_LINKS.gumroad_starter_9, "#/premium", true);
     safeLink(document.getElementById("goProLink"), AEC_LINKS.gumroad_pro_monthly_29, "#/premium", true);
     safeLink(document.getElementById("goProPlusLink"), AEC_LINKS.gumroad_proplus_79, "#/premium", true);
