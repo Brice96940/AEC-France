@@ -866,13 +866,26 @@
     }
 
     // Auto-track clicks with data-track
-    document.addEventListener("click", (e)=>{
-      const a = e.target.closest("[data-track]");
-      if(!a) return;
-      const label = a.getAttribute("data-track");
-      track("click", { event_category: "ui", event_label: label });
-    });
+document.addEventListener("click", (e)=>{
+  const a = e.target.closest("[data-track]");
+  if(!a) return;
 
+  const label = a.getAttribute("data-track");
+  const href  = a.getAttribute("href") || "";
+  const id    = a.id || "";
+
+  track("click", {
+    event_category: "ui",
+    event_label: label,
+
+    // ✅ pour toi (analyse business)
+    link_url: href,
+    link_id: id,
+
+    // ✅ utile si ton site est en #/accueil etc.
+    page_location: location.href
+  });
+});
     // =========================
     // MOBILE MENU
     // =========================
