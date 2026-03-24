@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://brice96940.github.io/AEC-France/sitemap.xml
