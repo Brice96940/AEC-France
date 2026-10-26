@@ -27,17 +27,15 @@
     contact: "Contacte AEC France sur WhatsApp, email ou LinkedIn."
   };
   function updateSeo(name) {
+    // LOT "audit et remplacement du dépôt public" : le canonical et og:url
+    // restent volontairement intouchés par ce routeur. Les réécrire ici
+    // (vers l'ancienne adresse github.io) annulait silencieusement, à
+    // chaque navigation interne, le canonical croisé vers le site officiel
+    // mis en place sur ce dépôt. Titre et description seuls restent
+    // ajustés par vue, sans toucher au signal de canonicalisation.
     document.title = TITLES[name] || TITLES.accueil;
     const description = document.querySelector('meta[name="description"]');
     if (description) description.setAttribute('content', DESCRIPTIONS[name] || DESCRIPTIONS.accueil);
-    const canonical = document.querySelector('link[rel="canonical"]');
-    if (canonical) canonical.setAttribute('href', `https://brice96940.github.io/AEC-France/#/${name}`);
-    const ogTitle = document.querySelector('meta[property="og:title"]');
-    const ogDesc = document.querySelector('meta[property="og:description"]');
-    const ogUrl = document.querySelector('meta[property="og:url"]');
-    if (ogTitle) ogTitle.setAttribute('content', document.title);
-    if (ogDesc) ogDesc.setAttribute('content', DESCRIPTIONS[name] || DESCRIPTIONS.accueil);
-    if (ogUrl) ogUrl.setAttribute('content', location.href);
   }
   function showView(name) {
     const safeName = VIEWS[name] ? name : 'accueil';
